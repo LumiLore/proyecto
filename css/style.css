@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "rowdies";
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
+  border-bottom: 1px solid rgb(21, 21, 63);
+ 
+}
+
+.header-logo {
+  width: 10%;
+}
+
+.header-menu {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-content: center;
+  list-style-type: none;
+  
+}
+
+.header-menu li  {
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  padding: 0px 10px;
+}
+.header-menu ul :hover {
+  color: red;
+}
+
+.hero-content {
+ 
+  display: flex;
+  height: 90%;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5%;
+  gap: 30px;
+  
+}
+
+.img1 {
+  max-width: 400px;
+}
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  background:linear-gradient(rgb(102, 102, 218),rgb(110, 226, 110));
+  gap: 40px;
+ 
+}
+
+.img2 {
+  max-width: 400px;
+  
+}
+.modelopnie :hover{
+  transform: scale(2,2);
+}
+div .section-texto {
+  
+  background:linear-gradient(rgb(102, 102, 218),rgb(110, 226, 110))
+}
+
+.pie-de-pag {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 50px 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  background:linear-gradient(rgb(148, 245, 148), rgb(241, 241, 87))
+
+}
+
+.grupoimg {
+  max-width: 400px;
+}
+
+.informa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  grid-template-areas:
+    "agenda servicio1"
+    "agenda servicio2"
+    "agenda servicio3";
+
+  gap: 25px;
+  padding: 10%;
+  border-bottom: 1px solid black;
+  background: linear-gradient(rgb(204, 204, 182),rgb(241, 165, 165));
+}
+.agenda {
+  max-width: 100%;
+  grid-area: agenda;
+}
+
+.servicio1 :hover {
+  display: flex;
+  flex-direction: column;
+  grid-area: servicio1;
+  justify-content: center;
+  align-content: center;
+  transition: all 5s;
+  transform: scale(2,2);
+  background-color: aliceblue;
+ 
+}
+.servicio2 :hover {
+  display: flex;
+  flex-direction: column;
+  grid-area: servicio2;
+  justify-content: center;
+  align-content: center;
+  transition: all 5s;
+  transform: scale(2,2);
+  background-color: aliceblue;
+}
+.servicio3 :hover {
+  display: flex;
+  flex-direction: column;
+  grid-area: servicio3;
+  justify-content: center;
+  align-content: center;
+  transition: all 5s;
+  transform: scale(2,2);
+  background-color: aliceblue;
+}
+.biografia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20%;
+}
+
+.manos {
+  max-width: 100%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+.contacto {
+  display: flex;
+  font-size: small;
+  width: 500px;
+  height: 400px;
+  flex-direction: column;
+  background:linear-gradient(rgb(102, 102, 218),rgb(110, 226, 110));
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .texto {
+    background-color: rgb(158, 228, 205);
+  }
+
+  .contacto {
+    background-color: rgb(170, 170, 233);
+  }
+
+  .informa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "agenda"
+      "servicio1"
+      "servicio2"
+      "servicio3";
+    gap: 20px;
+  }
+
+  .pie-de-pag {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 50px;
+    justify-items: center;
+    align-items: center;
+  }
+}
